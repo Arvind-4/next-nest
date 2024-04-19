@@ -1,0 +1,37 @@
+{
+  "name": "next-nest",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "next",
+    "nest",
+    "typescript",
+    "tailwindcss",
+    "pnpm",
+    "vercel",
+    "fullstack"
+  ],
+  "scripts": {
+    "bootstrap:root": "pnpm install",
+    "bootstrap:api": "cd api && pnpm install",
+    "bootstrap:ui": "cd ui && pnpm install",
+    "bootstrap": "pnpm run bootstrap:root && pnpm run bootstrap:api && pnpm run bootstrap:ui",
+    "format": "prettier --write .",
+    "dev:api": "cd api && pnpm start:dev",
+    "dev:ui": "cd ui && pnpm dev",
+    "dev": "npm-run-all --parallel dev:*",
+    "build:api": "cd api && pnpm build",
+    "build:ui": "cd ui && pnpm build",
+    "build": "npm-run-all build:*"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.3.2",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14"
+  }
+}
