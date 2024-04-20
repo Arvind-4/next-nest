@@ -4,11 +4,11 @@ import { useState } from "react";
 import { BASE_URL } from "@src/config";
 import View from "@src/components/view";
 
-export default function Button() {
-  const [date, setDate] = useState(null);
+export default function Button(): JSX.Element {
+  const [date, setDate] = useState<string | null>(null);
   const handleClick = async () => {
     const response = await fetch(`${BASE_URL}/date`);
-    const data = await response.json();
+    const data: { date: string } = await response.json();
     setDate(data.date);
   };
   return (
