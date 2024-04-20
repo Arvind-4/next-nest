@@ -6,6 +6,4 @@ function getBaseUrl() {
 
 const BASE_URL = getBaseUrl() + "/api";
 
-export {
-  BASE_URL
-}
+export { BASE_URL };
