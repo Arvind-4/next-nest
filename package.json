@@ -26,7 +26,7 @@
     "build:api": "cd api && pnpm build",
     "build:ui": "cd ui && pnpm build",
     "build": "npm-run-all build:*",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "devDependencies": {
     "@nestjs/cli": "^10.3.2",
