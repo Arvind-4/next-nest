@@ -8,7 +8,7 @@ export default function Button() {
     const [date, setDate] = useState(null);
     const handleClick = async () => {
         console.log("BASE_URL", BASE_URL);
-        const response = await fetch(`${BASE_URL}/api`);
+        const response = await fetch(`${BASE_URL}/date`);
         const data = await response.json();
         setDate(data.date);
     };
