@@ -1,4 +1,4 @@
-name: Test cross-platform
+name: Install, Build and Test Workflow
 
 on: [push]
 
